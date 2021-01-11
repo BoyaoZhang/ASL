@@ -66,6 +66,10 @@ boost_gaussianLSS <- function(y, data, m_stop = 1000, center_x = TRUE, weights =
     data_train <- apply(data_train, FUN = function(x) scale(x, scale = FALSE, center = TRUE), MARGIN = 2)
     data_test <- apply(data_test, FUN = function(x) scale(x, scale = FALSE, center = TRUE), MARGIN = 2)
   }
+  else {
+    data_train <- as.matrix(data_train)
+    data_test <- as.matrix(data_test)
+  }
 
   # add intercept
   X_train <- cbind(1, data_train)
