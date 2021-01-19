@@ -14,3 +14,4 @@ getRes(y, X)
 \description{
 get residuals and estimated coefficients
 }
+\keyword{internal}

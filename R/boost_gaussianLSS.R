@@ -1,6 +1,8 @@
 #' get residuals and estimated coefficients
 #' @param y response variable
 #' @param X feature matrix
+#' @keywords internal
+#' @export
 getRes <- function(y, X) {
   blong <- NULL
   for (i in 1:ncol(X)) {

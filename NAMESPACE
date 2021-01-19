@@ -3,6 +3,7 @@
 export(boost_gaussianLSS)
 export(cv_risk)
 export(cvrisk_plot)
+export(getRes)
 importFrom(ggplot2,aes)
 importFrom(ggplot2,geom_line)
 importFrom(ggplot2,geom_vline)
